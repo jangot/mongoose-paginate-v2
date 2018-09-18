@@ -65,7 +65,7 @@ function paginate(query, options, callback) {
             if (near) {
                 query = query
                     .where(near.key)
-                    .near(near.params);
+                    .nearSphere(near.params);
             }
 
             query
